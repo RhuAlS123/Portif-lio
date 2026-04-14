@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Portfólio | Desenvolvedor(a)</title>
+    <meta
+      name="description"
+      content="Portfólio de desenvolvedor(a): projetos, experiência, habilidades e contato."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para conteúdo</a>
+
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="#topo" aria-label="Ir para o topo">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">Rhuan Lucas Dos Santos Pinto</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav__toggleIcon" aria-hidden="true"></span>
+            <span class="srOnly">Abrir menu</span>
+          </button>
+
+          <div class="nav__links" id="nav-links">
+            <a class="nav__link" href="#sobre">Sobre</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#projetos">Projetos</a>
+            <a class="nav__link" href="#experiencia">Experiência</a>
+            <a class="nav__link" href="#contato">Contato</a>
+
+            <button class="theme" type="button" aria-label="Alternar tema">
+              <span class="theme__icon" aria-hidden="true"></span>
+              <span class="theme__text">Tema</span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              Disponível para freelas
+            </p>
+            <h1 class="hero__title">
+              Desenvolvedor <span class="grad">Full‑Stack</span> focado em produtos rápidos e
+              bem-feitos.
+            </h1>
+            <p class="hero__subtitle">
+              Eu construo interfaces modernas, APIs bem estruturadas e soluções que dão resultado. Aqui você encontra
+              meus projetos, stack e formas de contato.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projetos">Ver projetos</a>
+              <a class="btn btn--ghost" href="#contato">Falar comigo</a>
+            </div>
+
+            <dl class="hero__stats" aria-label="Destaques">
+              <div class="stat">
+                <dt class="stat__k">+2</dt>
+                <dd class="stat__v">Projetos</dd>
+              </div>
+              <div class="stat">
+                <dt class="stat__k">1 ano</dt>
+                <dd class="stat__v">Experiência</dd>
+              </div>
+              <div class="stat">
+                <dt class="stat__k">100%</dt>
+                <dd class="stat__v">Responsivo</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero__card" aria-label="Cartão de perfil">
+            <div class="profile">
+              <div class="profile__avatar">
+                <img
+                  class="profile__photo"
+                  src="{{ url_for('static', filename='image/imagen_perfil.jpg') }}"
+                  alt="Foto de perfil de Rhuan Lucas Dos Santos Pinto"
+                  width="54"
+                  height="54"
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <div class="profile__meta">
+                <p class="profile__name">Rhuan Lucas Dos Santos Pinto</p>
+                <p class="profile__role">Full‑Stack</p>
+                <p class="profile__loc">📍 Brasil (remoto)</p>
+              </div>
+            </div>
+
+            <div class="stack">
+              <p class="stack__title">Stack</p>
+              <div class="chips" role="list">
+                <span class="chip" role="listitem">Flask</span>
+                <span class="chip" role="listitem">React</span>
+                <span class="chip" role="listitem">PostgreSQL</span>
+                <span class="chip" role="listitem">Docker</span>
+                <span class="chip" role="listitem">TypeScript</span>
+              </div>
+            </div>
+
+            <div class="social">
+              <a
+                class="social__link"
+                href="https://github.com/RhuAlS123"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub de Rhuan Lucas Dos Santos Pinto"
+                >GitHub</a
+              >
+              <a
+                class="social__link"
+                href="https://www.linkedin.com/in/rhuan-pinto-41790a1b6/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn de Rhuan Lucas Dos Santos Pinto"
+                >LinkedIn</a
+              >
+              <a class="social__link" href="#" aria-label="Currículo (editar link)">CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Sobre</h2>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="card card--soft">
+              <h3 class="h3">Quem eu sou</h3>
+              <p>
+                Sou desenvolvedor full stack com foco em entregar software com boa experiência, performance e manutenção
+                simples. Gosto de transformar ideias em produtos com UI cuidadosa e backend organizado.
+              </p>
+          
+            </div>
+
+            <div class="card card--soft">
+              <h3 class="h3">O que eu entrego</h3>
+              <ul class="list">
+                <li>Interfaces responsivas e acessíveis</li>
+                <li>APIs REST bem estruturadas</li>
+                <li>Integrações e automações</li>
+                <li>Documentação e handoff claro</li>
+              </ul>
+              <div class="inlineCtas">
+                <a class="link" href="#contato">Vamos conversar →</a>
+                <a class="link" href="#projetos">Ver cases →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Skills</h2>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3 class="h3">Front-end</h3>
+              <p class="muted">UI moderna, componentes, performance e boas práticas.</p>
+              <div class="chips" role="list">
+                <span class="chip" role="listitem">HTML</span>
+                <span class="chip" role="listitem">CSS</span>
+                <span class="chip" role="listitem">JavaScript</span>
+                <span class="chip" role="listitem">React</span>
+              </div>
+            </article>
+
+            <article class="card">
+              <h3 class="h3">Back-end</h3>
+              <p class="muted">APIs, autenticação, banco de dados e integração.</p>
+              <div class="chips" role="list">
+                <span class="chip" role="listitem">Python</span>
+                <span class="chip" role="listitem">Flask</span>
+                <span class="chip" role="listitem">Java</span>
+                <span class="chip" role="listitem">REST</span>
+                <span class="chip" role="listitem">JWT</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Projetos</h2>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="project card">
+              <div class="project__thumb">
+                <img
+                  class="project__cover"
+                  src="{{ url_for('static', filename='image/sistema-escola-cadastro.png') }}"
+                  alt="Tela de cadastro de aluno do Sistema da Escola"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="project__body">
+                <h3 class="h3">Projeto 01 — Sistema da Escola (SIS ICPRO)</h3>
+                <p class="muted">
+                  Gestão escolar com cadastros, controle financeiro, parcelas, relatórios e exportação em PDF.
+                  Aplicação web responsiva com PWA e autenticação por perfis (administrador/colaborador) no Firebase.
+                </p>
+                <div class="chips" role="list" aria-label="Tecnologias">
+                  <span class="chip" role="listitem">React</span>
+                  <span class="chip" role="listitem">TypeScript</span>
+                  <span class="chip" role="listitem">Vite</span>
+                  <span class="chip" role="listitem">Firebase</span>
+                  <span class="chip" role="listitem">PWA</span>
+                </div>
+              </div>
+              <div class="project__actions">
+                <a
+                  class="btn btn--sm btn--primary"
+                  href="https://app-escola-e0d8e.web.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir demo do Sistema da Escola (Web)"
+                  >Demo</a>
+                <a class="btn btn--sm btn--ghost" href="#case-sistema-escola" aria-label="Abrir detalhes do Sistema da Escola">Detalhes</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project__thumb project__thumb--2" aria-hidden="true"></div>
+              <div class="project__body">
+                <h3 class="h3">Projeto 02 — Sistema de Monitoramento (NDA)</h3>
+                <p class="muted">
+                  Plataforma corporativa de comunicação e monitoramento para uso interno. Informações técnicas e de
+                  negócio mantidas em confidencialidade.
+                </p>
+                <div class="chips" role="list" aria-label="Tecnologias">
+                  <span class="chip" role="listitem">Flask</span>
+                  <span class="chip" role="listitem">Auth</span>
+                  <span class="chip" role="listitem">Docker</span>
+                </div>
+              </div>
+              <div class="project__actions">
+                <a class="btn btn--sm btn--primary" href="#case-projeto-02" aria-label="Abrir resumo do projeto confidencial">Resumo</a>
+                <a class="btn btn--sm btn--ghost" href="#case-projeto-02" aria-label="Abrir detalhes do projeto confidencial">Detalhes</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="cases" aria-label="Detalhes dos projetos">
+            <article class="case card card--soft" id="case-sistema-escola">
+              <div class="case__head">
+                <div>
+                  <h3 class="h3">Projeto 01 — Sistema da Escola (SIS ICPRO)</h3>
+                  <p class="muted">
+                    Produto entregue ao cliente com acesso web (PWA), autenticação e persistência de dados no Firebase
+                    (Firestore), com regras por perfil de usuário.
+                  </p>
+                </div>
+                <a class="link" href="#projetos">Voltar aos projetos ↑</a>
+              </div>
+
+              <div class="case__grid">
+                <div class="case__block">
+                  <p class="case__k">Problema</p>
+                  <p class="muted">
+                    A escola precisava centralizar cadastros, contratos e parcelas com relatórios confiáveis, com uso
+                    tanto no navegador quanto em dispositivos móveis.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Solução</p>
+                  <p class="muted">
+                    Aplicação React + TypeScript com fluxo administrativo completo: cadastro de alunos, financeiro,
+                    parcelas, relatórios e PDF, incluindo controles por perfil (administrador e colaborador).
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Resultado</p>
+                  <p class="muted">
+                    Sistema em produção no Firebase Hosting, com operação centralizada e fluxo de cobrança/relatórios
+                    mais rápido para a rotina da escola.
+                  </p>
+                </div>
+              </div>
+
+              <div class="shots" aria-label="Galeria de prints (substitua pelos seus)">
+                <div class="shot">
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/sistema-escola-cadastro.png') }}"
+                      alt="Tela de cadastro de aluno do Sistema da Escola"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 1 — Cadastro de aluno</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/sistema-escola-financeiro.png') }}"
+                      alt="Tela de cadastro financeiro do Sistema da Escola"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 2 — Cadastro financeiro</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/sistema-escola-parcelas.png') }}"
+                      alt="Tela de controle de parcelas do Sistema da Escola"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 3 — Controle de parcelas</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="case card card--soft" id="case-projeto-02">
+              <div class="case__head">
+                <div>
+                  <h3 class="h3">Projeto 02 — Sistema Corporativo de Monitoramento (NDA)</h3>
+                  <p class="muted">
+                    Projeto interno desenvolvido em contexto empresarial. Detalhes de implementação, regras de negócio
+                    e identidade do cliente foram ocultados por confidencialidade.
+                  </p>
+                </div>
+                <a class="link" href="#projetos">Voltar aos projetos ↑</a>
+              </div>
+
+              <div class="case__grid">
+                <div class="case__block">
+                  <p class="case__k">Problema</p>
+                  <p class="muted">
+                    Necessidade de centralizar comunicação operacional e monitoramento contínuo em um único fluxo
+                    interno, com rastreabilidade.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Solução</p>
+                  <p class="muted">
+                    Implementação de painel web privado com autenticação e consolidação de eventos em tempo real, com
+                    acesso restrito por perfil.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Resultado</p>
+                  <p class="muted">
+                    Ganho de visibilidade operacional e padronização do processo interno, com redução de retrabalho e
+                    resposta mais rápida.
+                  </p>
+                </div>
+              </div>
+
+              <div class="shots" aria-label="Galeria de prints (substitua pelos seus)">
+                <div class="shot">
+                  <div class="shot__ph" aria-hidden="true"></div>
+                  <p class="muted small">Print 1 — Ocultado por confidencialidade</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph shot__ph--2" aria-hidden="true"></div>
+                  <p class="muted small">Print 2 — Ocultado por confidencialidade</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph shot__ph--3" aria-hidden="true"></div>
+                  <p class="muted small">Print 3 — Ocultado por confidencialidade</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experiencia">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="h2">Experiência</h2>
+            <p class="muted">Destaques profissionais e o tipo de impacto gerado.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline__item card card--soft">
+              <div class="timeline__top">
+                <h3 class="h3">Estagiário de programação • AMTK</h3>
+                <p class="muted">2026 - Atual</p>
+              </div>
+            </article>
+
+            <article class="timeline__item card card--soft">
+              <div class="timeline__top">
+                <h3 class="h3">Freelancer</h3>
+                <p class="muted">2026</p>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--cta" id="contato">
+        <div class="container">
+          <div class="cta card">
+            <div class="cta__copy">
+              <h2 class="h2">Vamos construir algo juntos?</h2>
+              <p class="muted">
+                Se você tem uma ideia, um produto ou precisa de alguém para acelerar a entrega, me chama.
+              </p>
+              <div class="cta__actions">
+                <a class="btn btn--primary" href="mailto:pintorhaun35@gmail.com">Enviar e-mail</a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://wa.me/5535991982606?text=Ol%C3%A1%20Rhuan%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20falar%20sobre%20um%20projeto."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir conversa no WhatsApp"
+                  >WhatsApp</a
+                >
+              </div>
+            </div>
+
+            <form class="form" method="post" action="{{ url_for('enviar_contato') }}" aria-label="Enviar mensagem por e-mail">
+              {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                  <div class="form__flash" role="status">
+                    {% for category, message in messages %}
+                      <p class="flash flash--{{ category }}">{{ message }}</p>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              {% endwith %}
+              <label class="field">
+                <span class="field__label">Nome</span>
+                <input class="field__input" name="nome" placeholder="Seu nome" autocomplete="name" required maxlength="200" />
+              </label>
+              <label class="field">
+                <span class="field__label">E-mail</span>
+                <input
+                  class="field__input"
+                  name="email"
+                  type="email"
+                  placeholder="seuemail@exemplo.com"
+                  autocomplete="email"
+                  required
+                  maxlength="320"
+                />
+              </label>
+              <label class="field">
+                <span class="field__label">Mensagem</span>
+                <textarea
+                  class="field__input field__input--area"
+                  name="mensagem"
+                  placeholder="Como posso ajudar?"
+                  required
+                  maxlength="8000"
+                ></textarea>
+              </label>
+              <button class="btn btn--primary btn--block" type="submit">Enviar mensagem</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted small">
+          © <span id="year"></span> Rhuan Lucas Dos Santos Pinto. Viva Cristo rei!! Salve maria.
+          <img
+            class="footer__cross"
+            src="{{ url_for('static', filename='image/cruz-jerusalem.png') }}"
+            alt="Cruz de Jerusalém"
+            loading="lazy"
+            decoding="async"
+          />
+        </p>
+        <a class="link small" href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+    <script defer src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
