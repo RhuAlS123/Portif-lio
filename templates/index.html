@@ -73,7 +73,7 @@
 
             <dl class="hero__stats" aria-label="Destaques">
               <div class="stat">
-                <dt class="stat__k">+2</dt>
+                <dt class="stat__k">+3</dt>
                 <dd class="stat__v">Projetos</dd>
               </div>
               <div class="stat">
@@ -213,7 +213,7 @@
             <h2 class="h2">Projetos</h2>
           </div>
 
-          <div class="grid grid--2">
+          <div class="grid grid--3">
             <article class="project card">
               <div class="project__thumb">
                 <img
@@ -267,6 +267,35 @@
               <div class="project__actions">
                 <a class="btn btn--sm btn--primary" href="#case-projeto-02" aria-label="Abrir resumo do projeto confidencial">Resumo</a>
                 <a class="btn btn--sm btn--ghost" href="#case-projeto-02" aria-label="Abrir detalhes do projeto confidencial">Detalhes</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <div class="project__thumb project__thumb--3" aria-hidden="true"></div>
+              <div class="project__body">
+                <h3 class="h3">Projeto 03 — Smmarts (Android / WebView)</h3>
+                <p class="muted">
+                  App Android que embute a rede social Sngine com a marca Smmarts: ícone adaptativo, splash, URL de
+                  produção, build assinado (APK + AAB) e preparação para publicação na Google Play.
+                </p>
+                <div class="chips" role="list" aria-label="Tecnologias">
+                  <span class="chip" role="listitem">Android</span>
+                  <span class="chip" role="listitem">Java</span>
+                  <span class="chip" role="listitem">Gradle</span>
+                  <span class="chip" role="listitem">WebView</span>
+                  <span class="chip" role="listitem">Play Store</span>
+                </div>
+              </div>
+              <div class="project__actions">
+                <a
+                  class="btn btn--sm btn--primary"
+                  href="https://smmarts.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir o site Smmarts"
+                  >Site</a
+                >
+                <a class="btn btn--sm btn--ghost" href="#case-smmarts-android" aria-label="Abrir detalhes do app Smmarts">Detalhes</a>
               </div>
             </article>
           </div>
@@ -399,6 +428,60 @@
                 </div>
               </div>
             </article>
+
+            <article class="case card card--soft" id="case-smmarts-android">
+              <div class="case__head">
+                <div>
+                  <h3 class="h3">Projeto 03 — Smmarts (Android / WebView)</h3>
+                  <p class="muted">
+                    Entrega para cliente com app empacotado a partir do template Sngine: identidade visual no launcher e
+                    splash, URL de produção e artefatos de release prontos para a Play Console.
+                  </p>
+                </div>
+                <a class="link" href="#projetos">Voltar aos projetos ↑</a>
+              </div>
+
+              <div class="case__grid">
+                <div class="case__block">
+                  <p class="case__k">Problema</p>
+                  <p class="muted">
+                    Publicar a experiência web Sngine como app Android com marca consistente, assinatura release e
+                    comportamento estável ao abrir o domínio de produção em WebView.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Solução</p>
+                  <p class="muted">
+                    Configuração do projeto (nome, <code>applicationId</code> para a Play), geração de mipmaps e splash a
+                    partir dos PNGs do cliente, ajuste de rede quando o servidor redireciona HTTPS para HTTP
+                    (<code>usesCleartextTraffic</code> e URL base alinhada ao redirect), e pipeline de build
+                    (<code>assembleRelease</code> / <code>bundleRelease</code>) com keystore de release.
+                  </p>
+                </div>
+                <div class="case__block">
+                  <p class="case__k">Resultado</p>
+                  <p class="muted">
+                    Pacote pronto para testes (APK) e envio à loja (AAB), com documentação de entrega para o cliente
+                    instalar e submeter versões seguintes com a mesma assinatura.
+                  </p>
+                </div>
+              </div>
+
+              <div class="shots" aria-label="Galeria de prints">
+                <div class="shot">
+                  <div class="shot__ph" aria-hidden="true"></div>
+                  <p class="muted small">Print 1 — Adicione captura do app (launcher / splash)</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph shot__ph--2" aria-hidden="true"></div>
+                  <p class="muted small">Print 2 — Adicione captura do site no WebView</p>
+                </div>
+                <div class="shot">
+                  <div class="shot__ph shot__ph--3" aria-hidden="true"></div>
+                  <p class="muted small">Print 3 — Opcional: Play Console / AAB</p>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -423,6 +506,7 @@
                 <h3 class="h3">Freelancer</h3>
                 <p class="muted">2026</p>
               </div>
+            </article>
           </div>
         </div>
       </section>
