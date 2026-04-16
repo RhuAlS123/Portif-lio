@@ -271,7 +271,15 @@
             </article>
 
             <article class="project card">
-              <div class="project__thumb project__thumb--3" aria-hidden="true"></div>
+              <div class="project__thumb">
+                <img
+                  class="project__cover"
+                  src="{{ url_for('static', filename='image/smmarts-print-1.png') }}"
+                  alt="Smmarts — captura do site em desktop"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
               <div class="project__body">
                 <h3 class="h3">Projeto 03 — Smmarts (Android / WebView)</h3>
                 <p class="muted">
@@ -467,18 +475,42 @@
                 </div>
               </div>
 
-              <div class="shots" aria-label="Galeria de prints">
+              <div class="shots" aria-label="Galeria de prints do Smmarts">
                 <div class="shot">
-                  <div class="shot__ph" aria-hidden="true"></div>
-                  <p class="muted small">Print 1 — Adicione captura do app (launcher / splash)</p>
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/smmarts-print-1.png') }}"
+                      alt="Smmarts — site em desktop"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 1 — Site em desktop (navegador)</p>
                 </div>
                 <div class="shot">
-                  <div class="shot__ph shot__ph--2" aria-hidden="true"></div>
-                  <p class="muted small">Print 2 — Adicione captura do site no WebView</p>
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/smmarts-print-2.png') }}"
+                      alt="Smmarts — vista mobile (perfil WebView)"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 2 — Vista mobile (perfil tipo WebView)</p>
                 </div>
                 <div class="shot">
-                  <div class="shot__ph shot__ph--3" aria-hidden="true"></div>
-                  <p class="muted small">Print 3 — Opcional: Play Console / AAB</p>
+                  <div class="shot__ph">
+                    <img
+                      class="shot__img"
+                      src="{{ url_for('static', filename='image/smmarts-print-3.png') }}"
+                      alt="Smmarts — vista em tablet"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <p class="muted small">Print 3 — Vista em tablet</p>
                 </div>
               </div>
             </article>
